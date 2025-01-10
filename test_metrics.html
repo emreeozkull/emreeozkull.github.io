@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Metrics Test</title>
+</head>
+<body>
+    <h1>Metrics Test</h1>
+    <pre id="metrics"></pre>
+    <script>
+        fetch('plots/metrics.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('metrics').textContent = 
+                    JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                document.getElementById('metrics').textContent = 
+                    'Error: ' + error.message;
+            });
+    </script>
+</body>
+</html> 

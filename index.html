@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Viewing Pattern Analysis</title>
+    <title>Netflix Attention Span Analysis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,15 +12,15 @@
             <ul>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#data">Data Analysis</a></li>
-                <li><a href="#findings">Key Findings</a></li>
                 <li><a href="#visualizations">Visualizations</a></li>
+                <li><a href="#findings">Conclusions</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="overview">
-            <h1>Netflix Viewing Pattern Analysis</h1>
+            <h1>Netflix Attention Span Analysis</h1>
             <p>This analysis explores viewing patterns and attention span metrics based on Netflix watching history. The visualizations below provide insights into viewing habits, binge-watching patterns, and attention metrics over time.</p>
         </section>
 
@@ -92,6 +92,40 @@
             <h2>Machine Learning Analysis</h2>
             <div class="viz-container">
                 <div class="viz-item prediction-section">
+
+                    <h3>Future Viewing Predictions</h3>
+                    <p class="viz-description">
+                        Our machine learning model achieves <strong>82.0% accuracy</strong> in predicting viewing patterns, 
+                        with a confidence interval of <strong>95.0%</strong>. The model analyzes historical viewing data 
+                        to forecast future trends, taking into account:
+                    </p>
+                    <ul class="prediction-features">
+                        <li>Daily viewing patterns and peak hours</li>
+                        <li>Weekly viewing cycles and weekend effects</li>
+                        <li>Seasonal variations throughout the year</li>
+                        <li>Long-term behavioral trends</li>
+                    </ul>
+                    
+                    <div class="prediction-metrics">
+                        <div class="metric-card">
+                            <h4>Model Accuracy</h4>
+                            <p id="accuracyValue">82.0%</p>
+                            <p class="metric-description">Overall prediction accuracy score</p>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Confidence Level</h4>
+                            <p id="confidenceValue">95.0%</p>
+                            <p class="metric-description">Prediction confidence interval</p>
+                        </div>
+                    </div>
+
+                    <p class="viz-description">
+                        The graph below shows both historical data and predicted future viewing patterns, 
+                        with shaded areas representing the confidence intervals of our predictions.
+                    </p>
+                    <div class="plot" id="predictionPlot"></div>
+
+
                     <div class="prediction-header">
                         <div class="header-stat">
                             <span class="stat-value">+27%</span>
@@ -129,37 +163,7 @@
                         </div>
                     </div>
 
-                    <h3>Future Viewing Predictions</h3>
-                    <p class="viz-description">
-                        Our machine learning model achieves <strong>82.0% accuracy</strong> in predicting viewing patterns, 
-                        with a confidence interval of <strong>95.0%</strong>. The model analyzes historical viewing data 
-                        to forecast future trends, taking into account:
-                    </p>
-                    <ul class="prediction-features">
-                        <li>Daily viewing patterns and peak hours</li>
-                        <li>Weekly viewing cycles and weekend effects</li>
-                        <li>Seasonal variations throughout the year</li>
-                        <li>Long-term behavioral trends</li>
-                    </ul>
-                    
-                    <div class="prediction-metrics">
-                        <div class="metric-card">
-                            <h4>Model Accuracy</h4>
-                            <p id="accuracyValue">82.0%</p>
-                            <p class="metric-description">Overall prediction accuracy score</p>
-                        </div>
-                        <div class="metric-card">
-                            <h4>Confidence Level</h4>
-                            <p id="confidenceValue">95.0%</p>
-                            <p class="metric-description">Prediction confidence interval</p>
-                        </div>
-                    </div>
 
-                    <p class="viz-description">
-                        The graph below shows both historical data and predicted future viewing patterns, 
-                        with shaded areas representing the confidence intervals of our predictions.
-                    </p>
-                    <div class="plot" id="predictionPlot"></div>
                 </div>
             </div>
         </section>
@@ -169,7 +173,7 @@
             <div class="findings-container">
                 <div class="statistical-analysis">
                     <h3>Trend Analysis</h3>
-                    <p>While initial observations might suggest a decrease in average viewing duration over the years, our rigorous statistical analysis tells a different story:</p>
+                    <p style="color:black" >While initial observations might suggest a decrease in average viewing duration over the years, our rigorous statistical analysis tells a different story:</p>
                     <ul>
                         <li>Visual Trend: The raw data shows an apparent decrease in viewing duration</li>
                         <li>Statistical Validation: We conducted a Mann-Kendall trend test to verify this observation:
@@ -206,7 +210,6 @@
                             <ul>
                                 <li>Episode completion rate averages 85%</li>
                                 <li>Content engagement is highest for episodes under 40 minutes</li>
-                                <li>Series retention rate decreases after episode 6</li>
                             </ul>
                         </li>
                     </ol>
@@ -214,7 +217,7 @@
 
                 <div class="conclusion">
                     <h3>Overall Conclusions</h3>
-                    <p>Our comprehensive analysis reveals that while viewing patterns show variations over time, these changes are not statistically significant. Key takeaways include:</p>
+                    <p >Our comprehensive analysis reveals that while viewing patterns show variations over time, these changes are not statistically significant. Key takeaways include:</p>
                     <ul>
                         <li>Viewing habits remain relatively stable over the analyzed period, despite apparent visual trends</li>
                         <li>User engagement is strongly influenced by content length and time of day</li>
@@ -225,12 +228,10 @@
 
                 <div class="implications">
                     <h3>Practical Implications</h3>
-                    <p>These findings suggest several recommendations:</p>
+                    <p style="color:black">These findings suggest several recommendations:</p>
                     <ul>
-                        <li>Optimal content release timing should align with peak viewing hours</li>
                         <li>Episode length optimization around 40 minutes may maximize engagement</li>
                         <li>Weekend-specific content strategies might be beneficial</li>
-                        <li>Focus on maintaining consistent engagement rather than increasing viewing duration</li>
                     </ul>
                 </div>
             </div>

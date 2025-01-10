@@ -580,3 +580,113 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Hypothesis Section Styling */
+.hypothesis-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.hypothesis {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(229, 9, 20, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.hypothesis:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(229, 9, 20, 0.15);
+}
+
+.hypothesis h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.hypothesis p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.math-notation {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hypothesis-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .hypothesis {
+        padding: 1rem;
+    }
+}
+
+/* Key Conclusion Statement Styling */
+.key-conclusion {
+    background: var(--card-background);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.key-conclusion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(229, 9, 20, 0.15);
+}
+
+.key-conclusion::before {
+    content: '"';
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 4rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-family: Georgia, serif;
+}
+
+.key-conclusion p {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 2rem;
+    font-weight: 500;
+}
+
+.key-conclusion .highlight {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .key-conclusion {
+        padding: 1.5rem;
+    }
+    
+    .key-conclusion p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
